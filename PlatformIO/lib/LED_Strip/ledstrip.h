@@ -26,15 +26,12 @@
 
 // Structure to hold LED strip state
 struct led_strip {
-    // int pinmask;                // Output pin  
-    // int pin;
     int length;             // Number of LEDs
     int type;               // LED type (e.g., LED_TYPE_WS2812_RGB)
     struct cRGB *leds;      // Array of LED colors
 };
 
 void begin(struct led_strip *strip, int number_pixels, int nType);
-// void updateType(struct led_strip *strip, int new_type);
 void show(struct led_strip *strip); 
 void setPixelColor(struct led_strip *strip, int num, uint8_t red, uint8_t green, uint8_t blue);
 void fill(struct led_strip *strip, uint8_t red, uint8_t green, uint8_t blue);
