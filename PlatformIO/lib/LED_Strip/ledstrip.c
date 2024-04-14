@@ -55,7 +55,6 @@ void fill(struct led_strip *strip, uint8_t red, uint8_t green, uint8_t blue)
 */
 void setBrightness(struct led_strip *strip, uint8_t brightness) 
 {
-    // Assumes the 'light_ws2812' library doesn't have brightness control
     for (int i = 0; i < strip->length; i++) {
         strip->leds[i].r = (strip->leds[i].r * brightness) >> 8; 
         strip->leds[i].g = (strip->leds[i].g * brightness) >> 8;
@@ -67,5 +66,4 @@ void setBrightness(struct led_strip *strip, uint8_t brightness)
 */
 void clear(struct led_strip *strip) 
 {
-    fill(strip, 0, 0, 0); // Fill with black (off)
-}
+    fill(strip, 0, 0, 0);
