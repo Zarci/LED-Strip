@@ -1,6 +1,8 @@
 # AVR Functions for the WS2812B implemented in C
 This project is an extension of [light_ws2812](https://github.com/cpldcpu/light_ws2812).
- 
+
+The ledstrip library acts as a wrapper for [light_ws2812](https://github.com/cpldcpu/light_ws2812) exposing useful color matrix functions.
+
 
 ## Setup
 - Use the provided main.c template found [here](https://github.com/Zarci/LED-Strip/blob/main/PlatformIO/src/main.c) to get started.
