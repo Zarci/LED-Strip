@@ -69,26 +69,3 @@ void clear(struct led_strip *strip)
 {
     fill(strip, 0, 0, 0); // Fill with black (off)
 }
-
-
-
-
-
-
-
-
-// void LEDS_init(LEDStrip *ledstrip, const uint8_t signalPin, const uint8_t pixelCOUNT)
-// {
-//     ledstrip->LED_COUNT = pixelCOUNT;
-
-//     if (signalPin >= 0 && signalPin <= 7)
-//     {
-//         ledstrip->LED_PIN = signalPin;
-//         ledstrip->LED_PIN_PORT = 'D';
-//     }
-//     else if (signalPin >= 8 && signalPin <= 13)
-//     {
-//         ledstrip->LED_PIN = signalPin - 8;
-//         ledstrip->LED_PIN_PORT = 'B';
-//     }
-// }
