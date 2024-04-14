@@ -1,21 +1,23 @@
 # AVR Functions for the WS2812B implemented in C
-## This project is an extention of [light_ws2812](https://github.com/cpldcpu/light_ws2812).
+This project is an extension of [light_ws2812](https://github.com/cpldcpu/light_ws2812).
  
 
-### Setup
+## Setup
 - Use the provided main.c template found [here](https://github.com/Zarci/LED-Strip/blob/main/PlatformIO/src/main.c) to get started.
 
-#### PlatformIO (recommended) 
+### PlatformIO (recommended) 
 
 1. Install PlatformIO; directions can be found [here](https://github.com/Zarci/LED-Strip/blob/main/Ece484_platformio.pdf)
 
 ```git clone https://github.com/Zarci/LED-Strip.git```
 
-2. Choose one of the examples found [here](https://github.com/Zarci/LED-Strip/tree/main/PlatformIO/test/Examples) and copy it into main.c
+2. Copy one of the examples found [here](https://github.com/Zarci/LED-Strip/tree/main/PlatformIO/test/Examples) into main.c
 
-#### AVR Tool Chain
+3. Upload and go!
 
+### AVR Tool Chain
 
+---
 ### Defined functions
 - begin(struct led_strip *strip, int number_pixels, int nType);
 - show(struct led_strip *strip);
@@ -28,3 +30,12 @@
 - int length;             // Number of LEDs
 - int type;               // LED type (e.g., LED_TYPE_WS2812_RGB)
 - struct cRGB *leds;      // Array of LED colors
+
+---
+
+## Demo Videos
+
+
+
+
+##
