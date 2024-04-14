@@ -40,4 +40,3 @@ The ledstrip library acts as a wrapper for [light_ws2812](https://github.com/cpl
 
 
 
-##
