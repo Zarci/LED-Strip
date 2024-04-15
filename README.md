@@ -7,7 +7,7 @@ The ledstrip library acts as a wrapper for [light_ws2812](https://github.com/cpl
 
 ## Setup
 - Use the provided main.c template found [here](https://github.com/Zarci/LED-Strip/blob/main/PlatformIO/src/main.c) to get started.
-
+- Edit the ledstrip_settings.h file with the pin and port number that you are using on your Arduino found [here](https://github.com/Zarci/LED-Strip/blob/main/PlatformIO/lib/LED_Strip/ledstrip_settings.h).
 ### PlatformIO (recommended) 
 
 1. Install PlatformIO; directions can be found [here](https://github.com/Zarci/LED-Strip/blob/main/Ece484_platformio.pdf)
@@ -19,6 +19,18 @@ The ledstrip library acts as a wrapper for [light_ws2812](https://github.com/cpl
 3. Upload and go!
 
 ### AVR Tool Chain
+
+1. Install the classes AVR Tool Chain
+
+```git clone https://github.com/Zarci/LED-Strip.git```
+
+```cd  AVR_ToolChain/ ```
+
+3. Copy one of the examples found [here](https://github.com/Zarci/LED-Strip/tree/main/PlatformIO/test/Examples) into main.c
+
+```python compile_script.py 4 [COM_Port]```
+
+4. It should upload, and the LEDs should turn on!
 
 ---
 ### Defined functions
