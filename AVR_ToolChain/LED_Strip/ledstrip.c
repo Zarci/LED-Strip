@@ -1,5 +1,5 @@
 #include "ledstrip.h"
-
+#include <stdlib.h>
 /**
  * The initialization function that sets up the data structure
  * @param strip Pass by ref (&myStrip) of the led data structure.
@@ -67,3 +67,4 @@ void setBrightness(struct led_strip *strip, uint8_t brightness)
 void clear(struct led_strip *strip) 
 {
     fill(strip, 0, 0, 0);
+}

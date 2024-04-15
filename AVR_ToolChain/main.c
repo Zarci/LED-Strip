@@ -1,4 +1,4 @@
-#include "ledstrip.h" 
+#include "LED_Strip/ledstrip.h" 
 #define NUM_LEDS  50
 
 int main() {

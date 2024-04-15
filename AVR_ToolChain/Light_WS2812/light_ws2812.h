@@ -13,7 +13,7 @@
 #ifndef LIGHT_WS2812_H_
 #define LIGHT_WS2812_H_
 
-#include "ledstrip_settings.h"
+#include "../LED_Strip/ledstrip_settings.h"
 #include <avr/io.h>
 #include <avr/interrupt.h>
 

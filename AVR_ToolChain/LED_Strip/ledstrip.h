@@ -15,9 +15,9 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
-#include <ledstrip_settings.h>
+#include "ledstrip_settings.h"
 
-#include <Light_WS2812/light_ws2812.h>
+#include "../Light_WS2812/light_ws2812.h"
 
 
 // Constants for LED types
